@@ -27,12 +27,14 @@ body {
 
 caption {
   font-size: 30px;
+  color: white;
 }
 
 td, th {
   border: 1px solid #000;
   width: 170px;
   height: 40px;
+  color: white;
 }
 
 th {
@@ -45,4 +47,5 @@ td {
 
 .monospace {
   font-family: monospace;
+  background-color: black;
 }
