@@ -1,6 +1,11 @@
+body {
+  background-color: royalblue;
+}
+
 caption {
   font-size: 30px;
 }
+
 td, th {
   border: 1px solid #000;
   width: 170px;
