@@ -1,5 +1,28 @@
+h1 {
+  text-align: center;
+  width: 50%;
+  font-family: fantasy;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  background-color:#d652a4;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+
 body {
   background-color: royalblue;
+  margin: 1%;
+  padding: 1%;
 }
 
 caption {
@@ -10,4 +33,16 @@ td, th {
   border: 1px solid #000;
   width: 170px;
   height: 40px;
+}
+
+th {
+  font-size: 20px;
+}
+
+td {
+  font-size: 14px;
+}
+
+.monospace {
+  font-family: monospace;
 }
