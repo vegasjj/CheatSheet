@@ -1,6 +1,5 @@
 h1 {
   text-align: center;
-  width: 50%;
   font-family: fantasy;
 }
 
@@ -10,6 +9,9 @@ body {
   padding: 1%;
 }
 
+table {
+  margin: 0 auto;
+}
 caption {
   font-size: 30px;
   color: white;
@@ -17,8 +19,8 @@ caption {
 
 td, th {
   border: 1px solid #000;
-  width: 170px;
-  height: 40px;
+/*  width: 170px;
+  height: 40px;*/
   color: white;
 }
 
