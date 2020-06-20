@@ -4,7 +4,7 @@ h1 {
 }
 
 body {
-  background-color: royalblue;
+  background-color: #f0ffff;
   margin: 1%;
   padding: 1%;
 }
@@ -12,27 +12,32 @@ body {
 table {
   margin: 0 auto;
 }
+
 caption {
   font-size: 30px;
-  color: white;
+  color: #734231;
 }
 
 td, th {
   border: 1px solid #000;
-/*  width: 170px;
-  height: 40px;*/
-  color: white;
+
 }
 
 th {
   font-size: 20px;
+  font-family: arial;
+  background-color: #f0e68c;
+  color: #734231;
 }
 
 td {
-  font-size: 14px;
+  font-size: 16px;
+  padding: 4px;
+  background-color: #dcdcdc;
+  color: #111b52;
 }
 
 .monospace {
   font-family: monospace;
-  background-color: black;
+  background-color: #add8e6;
 }
