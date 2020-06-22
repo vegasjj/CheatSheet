@@ -110,29 +110,81 @@
         </thead>
         <tbody>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>docker run</td>
+            <td><span class="code">docker run -d -p image_id -name container_name</span></td>
+            <td>Search for a given image to run a container.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>docker build</td>
+            <td><span class="code">docker build -t image_name .</span></td>
+            <td>Builds an image out if a docker file.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>docker images</td>
+            <td><span class="code">docker images</span></td>
+            <td>Shows the images built on the host.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td rowspan="2">docker container</td>
+            <td><span class="code">docker container ls</span></td>
+            <td>Shows running containers.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td><span class="code">docker container ps -a</span></td>
+            <td>Shows running and stopped containers.</td>
+          </tr>
+          <tr>
+            <td>docker exec</td>
+            <td><span class="code">docker exec -it container_id bash</span></td>
+            <td>Logs into a given container cli.</td>
+          </tr>
+          <tr>
+            <td>exit</td>
+            <td><span class="code">exit</span></td>
+            <td>Logs out of a container cli.</td>
+          </tr>
+          <tr>
+            <td>docker logs</td>
+            <td><span class="code">docker logs container_id</span></td>
+            <td>Shows the logs of a given container.</td>
+          </tr>
+          <tr>
+            <td>docker stop</td>
+            <td><span class="code">docker stop container_id</span></td>
+            <td>Stops a given container.</td>
+          </tr>
+          <tr>
+            <td>docker rm</td>
+            <td><span class="code">docker rm container_id</span></td>
+            <td>Removes a given container.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>Docker flags</caption>
+        <thead>
+          <tr>
+            <th>Sintax</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="code">-t image_name</span></td>
+            <td>Names a given image.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-d image_id</span></td>
+            <td>Allows to run other commands while the container is built in the background.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-p host_port:container_port</span></td>
+            <td>Opens a given host/container port.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-name container_name</span></td>
+            <td>Names a given container.</td>
           </tr>
         </tbody>
       </table>
