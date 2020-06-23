@@ -111,7 +111,7 @@
         <tbody>
           <tr>
             <td>docker run</td>
-            <td><span class="code">docker run -d -p image_id -name container_name</span></td>
+            <td><span class="code">docker run -d -p --name image_id container_name</span></td>
             <td>Search for a given image to run a container.</td>
           </tr>
           <tr>
@@ -154,6 +154,11 @@
             <td>Stops a given container.</td>
           </tr>
           <tr>
+            <td>docker start</td>
+            <td><span class="code">docker start container_id</span></td>
+            <td>starts a given container.</td>
+          </tr>
+          <tr>
             <td>docker rm</td>
             <td><span class="code">docker rm container_id</span></td>
             <td>Removes a given container.</td>
@@ -183,7 +188,7 @@
             <td>Opens a given host/container port.</td>
           </tr>
           <tr>
-            <td><span class="code">-name container_name</span></td>
+            <td><span class="code">--name container_name</span></td>
             <td>Names a given container.</td>
           </tr>
         </tbody>
