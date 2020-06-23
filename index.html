@@ -199,49 +199,200 @@
     <br>
     <section id="js">
       <table>
-        <caption>JavaScript Basic Commands</caption>
+        <caption>JavaScript Comments</caption>
         <thead>
           <tr>
-            <th>Command</th>
             <th>Sintax</th>
             <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><span class="code">// This is a comment</span></td>
+            <td>Single line comment.</td>
+          </tr>
+          <tr>
+            <td><span class="code">/* This is a comment</span></td>
+            <td rowspan="2">Multiline comment.</td>
+          </tr>
+          <tr>
+            <td><span class="code">This is a comment */</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>JavaScript Objects</caption>
+        <thead>
+          <tr>
+            <th>Object</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>Console</td>
-            <td><span class="code">console.log(parameter)</span></td>
+            <td>Interacts with the js console</td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>Interacts with complex math operations.</td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>Interacts with number operations.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>JavaScript Methods</caption>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Sintax</th>
+            <th>Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.log()</td>
+            <td><span class="code">console.log(argument);</span></td>
             <td>Logs a given parameter to the console.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>.toUpperCase()</td>
+            <td><span class="code">console.log('string'.toUpperCase());</span></td>
+            <td>Converts a string to uppercase letters.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>.startsWith()</td>
+            <td><span class="code">console.log('string'.startsWith('fill_letter'));</span></td>
+            <td>Returns a boolean value corresponding with the question.</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>.trim()</td>
+            <td><span class="code">console.log('   string   '.trim());</span></td>
+            <td>Removes whitespace at the begining and at the end of the string .</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>.random()</td>
+            <td><span class="code">console.log(Math.random());</span></td>
+            <td>Prints a random number between 0 (inclusive) and 1 (non inclusive).</td>
           </tr>
           <tr>
-            <td></td>
-            <td><span class="code"></span></td>
-            <td></td>
+            <td>.floor()</td>
+            <td><span class="code">console.log(Math.floor(Math.random() * 50));</span></td>
+            <td>Prints a random whole number(round down) between 0 (inclusive) and 50 (non inclusive).</td>
           </tr>
           <tr>
-            <td></td>
+            <td>.ceil()</td>
+            <td><span class="code">console.log(Math.ceil(Math.random() * 50));</span></td>
+            <td>Prints a random whole number(round up) between 0 (inclusive) and 50 (non inclusive).</td>
+          </tr>
+          <tr>
+            <td>.isInteger()</td>
+            <td><span class="code">console.log(Number.isInteger(50));</span></td>
+            <td>Prints wether a number is an integer (true) or not (false).</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>JavaScript Data Types</caption>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Values</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>String</td>
+            <td><span class="code">'This is a str1ng!'</span></td>
+            <td>A string or combination of text, numbers, spaces or punctuation wrapped in quotes.</td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td><span class="code">5, 45, 100, 6.8</span></td>
+            <td>An interger or decimal number</td>
+          </tr>
+          <tr>
+            <td>Boolean</td>
+            <td><span class="code">true or false</span></td>
+            <td>A boolean expresion that only can take either true or false as values.</td>
+          </tr>
+          <tr>
+            <td>Null</td>
+            <td><span class="code">null</span></td>
+            <td>An intentional absence of value.</td>
+          </tr>
+          <tr>
+            <td>Undefined</td>
+            <td><span class="code">undefined</span></td>
+            <td>It denotes absence of value, but not necesarely intentional.</td>
+          </tr>
+          <tr>
+            <td>Object</td>
             <td><span class="code"></span></td>
-            <td></td>
+            <td>A colection of related data</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>JavaScript Basic Operators</caption>
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Sintax</th>
+            <th>Output</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Add (+)</td>
+            <td><span class="code">4+8</span></td>
+            <td>12</td>
+            <td>Adds two or more numbers.</td>
+          </tr>
+          <tr>
+            <td>Substract (-)</td>
+            <td><span class="code">8-3</span></td>
+            <td>5</td>
+            <td>Substract two or more numbers.</td>
+          </tr>
+          <tr>
+            <td>Multiply (*)</td>
+            <td><span class="code">4*2</span></td>
+            <td>8</td>
+            <td>Multiplies two or more numbers.</td>
+          </tr>
+          <tr>
+            <td>Divide (/)</td>
+            <td><span class="code">1/8</span></td>
+            <td>0.125</td>
+            <td>Divides two or more numbers.</td>
+          </tr>
+          <tr>
+            <td>Remainder (%)</td>
+            <td><span class="code">8%6</span></td>
+            <td>2</td>
+            <td>Stores the remainder of a division.</td>
+          </tr>
+          <tr>
+            <td>Concatenation (+)</td>
+            <td><span class="code">'Hello ' + 'World'</span></td>
+            <td>Hello World</td>
+            <td>Concatenates two or more strings.</td>
+          </tr>
+          <tr>
+            <td>Dot (.)</td>
+            <td><span class="code">'Hello'.length</span></td>
+            <td>5</td>
+            <td>It can be used to access properties or methods in objects or data types.</td>
           </tr>
         </tbody>
       </table>
