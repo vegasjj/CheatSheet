@@ -110,8 +110,13 @@
         </thead>
         <tbody>
           <tr>
+            <td>docker info</td>
+            <td><span class="code">docker info</span></td>
+            <td>Display system wide information.</td>
+          </tr>
+          <tr>
             <td>docker run</td>
-            <td><span class="code">docker run -d -p --name image_id container_name</span></td>
+            <td><span class="code">docker run -d --name container_name -p host_port:container_port image_id</span></td>
             <td>Search for a given image to run a container.</td>
           </tr>
           <tr>
@@ -130,13 +135,13 @@
             <td>Shows running containers.</td>
           </tr>
           <tr>
-            <td><span class="code">docker container ps -a</span></td>
+            <td><span class="code">docker container ps --no-trunc -a</span></td>
             <td>Shows running and stopped containers.</td>
           </tr>
           <tr>
             <td>docker exec</td>
-            <td><span class="code">docker exec -it container_id bash</span></td>
-            <td>Logs into a given container cli.</td>
+            <td><span class="code">docker exec -it container_id my_shell</span></td>
+            <td>Executes a given command into a running contanier.</td>
           </tr>
           <tr>
             <td>exit</td>
@@ -162,6 +167,11 @@
             <td>docker rm</td>
             <td><span class="code">docker rm container_id</span></td>
             <td>Removes a given container.</td>
+          </tr>
+          <tr>
+            <td>docker push</td>
+            <td><span class="code">docker push image_id</span></td>
+            <td>Push a given image to a registry.</td>
           </tr>
         </tbody>
       </table>
@@ -190,6 +200,18 @@
           <tr>
             <td><span class="code">--name container_name</span></td>
             <td>Names a given container.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-ti container_name</span></td>
+            <td>Allows the container to run with an interactive prompt.</td>
+          </tr>
+          <tr>
+            <td><span class="code">--no-trunc container_name</span></td>
+            <td>Not truncated output.</td>
+          </tr>
+          <tr>
+            <td><span class="code">--fliter "name=container_name"</span></td>
+            <td>Fliter a given container by name.</td>
           </tr>
         </tbody>
       </table>
@@ -221,6 +243,26 @@
         </tbody>
       </table>
       <br>
+      <table>
+        <caption>JavaScript Keywords</caption>
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Sintax</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td><span class="code">&lt;&gt;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="centerLink" colspan='3'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords" target='_blank'>Click here to know more</a></td>
+          </tr>
+        </tbody>
+      </table>
       <table>
         <caption>JavaScript Objects</caption>
         <thead>
@@ -272,7 +314,7 @@
           </tr>
           <tr>
             <td>.trim()</td>
-            <td><span class="code">console.log('   string   '.trim());</span></td>
+            <td><span class="code">console.log(' string '.trim());</span></td>
             <td>Removes whitespace at the begining and at the end of the string .</td>
           </tr>
           <tr>
@@ -394,6 +436,12 @@
             <td>5</td>
             <td>It can be used to access properties or methods in objects or data types.</td>
           </tr>
+          <tr>
+            <td>Assignment (=)</td>
+            <td><span class="code">var myName = 'Javier';</span></td>
+            <td>Javier</td>
+            <td>It can be used to assign values to variables.</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -412,6 +460,9 @@
           <td></td>
           <td><span class="code">&lt;&gt;</span></td>
           <td></td>
+        </tr>
+        <tr>
+          <td class='centerLink' colspan=''><a href="#" target='_blank'>Click here to know more</a></td>
         </tr>
       </tbody>
     </table> -->
