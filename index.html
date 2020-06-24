@@ -244,6 +244,50 @@
       </table>
       <br>
       <table>
+        <caption>JavaScript Keywords</caption>
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Sintax</th>
+            <th>Output</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>var</td>
+            <td><span class="code">var name = 'Javier';</span></td>
+            <td></td>
+            <td>Prefered method to name variables before ES6.</td>
+          </tr>
+          <tr>
+            <td>let</td>
+            <td><span class="code">let name = 'Javier';</span></td>
+            <td></td>
+            <td>Prefered method to name variables after ES6.</td>
+          </tr>
+          <tr>
+            <td>const</td>
+            <td><span class="code">const name = 'Javier';</span></td>
+            <td></td>
+            <td>It allows to assign a value to a constant.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">typeof</td>
+            <td><span class="code">let variable = 'pan';</span></td>
+            <td rowspan="2">string</td>
+            <td rowspan="2">Outputs the data type (as a string) of a given variable.</td>
+          </tr>
+          <tr>
+            <td><span class="code">console.log(typeof variable);</span></td>
+          </tr>
+          <tr>
+            <td class="centerLink" colspan='4'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords" target='_blank'>Click here to know more</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
         <caption>JavaScript Objects</caption>
         <thead>
           <tr>
@@ -294,7 +338,7 @@
           </tr>
           <tr>
             <td>.trim()</td>
-            <td><span class="code">console.log('   string   '.trim());</span></td>
+            <td><span class="code">console.log(' string '.trim());</span></td>
             <td>Removes whitespace at the begining and at the end of the string .</td>
           </tr>
           <tr>
@@ -353,7 +397,7 @@
           <tr>
             <td>Undefined</td>
             <td><span class="code">undefined</span></td>
-            <td>It denotes absence of value, but not necesarely intentional.</td>
+            <td>The value of an uninitialized variable.</td>
           </tr>
           <tr>
             <td>Object</td>
@@ -416,6 +460,98 @@
             <td>5</td>
             <td>It can be used to access properties or methods in objects or data types.</td>
           </tr>
+          <tr>
+            <td>Assignment (=)</td>
+            <td><span class="code">var myName = 'Javier';</span></td>
+            <td>Javier</td>
+            <td>It can be used to assign values to variables.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table>
+        <caption>JavaScript Mathematical Assignment Operators</caption>
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Sintax</th>
+            <th>Output</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Add (+=)</td>
+            <td><span class="code">let x = 2;</span></td>
+            <td rowspan="2">4</td>
+            <td rowspan="2">Increase the value of a variable adding it by a given number.</td>
+          </tr>
+          <tr>
+            <td><span class="code">x += 2;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Substract (-=)</td>
+            <td><span class="code">let x = 4;</span></td>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Decrease the value of a variable substracting it by a given number.</td>
+          </tr>
+          <tr>
+            <td><span class="code">x -= 2;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Multiply (*=)</td>
+            <td><span class="code">let x = 2;</span></td>
+            <td rowspan="2">4</td>
+            <td rowspan="2">Multiplies the value of a variable multiplying it by a given number.</td>
+          </tr>
+          <tr>
+            <td><span class="code">x *= 2;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Divide (/=)</td>
+            <td><span class="code">let x = 2;</span></td>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Divides the value of a variable dividing it by a given number .</td>
+          </tr>
+          <tr>
+            <td><span class="code">x /= 2;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Increment Operator (++)</td>
+            <td><span class="code">let x = 2;</span></td>
+            <td rowspan="2">3</td>
+            <td rowspan="2">Increments the value of a variable by 1.</td>
+          </tr>
+          <tr>
+            <td><span class="code">x++;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Decrement Operator (--)</td>
+            <td><span class="code">let x = 2;</span></td>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Decrements the value of a variable by 1.</td>
+          </tr>
+          <tr>
+            <td><span class="code">x--;</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">String Concatenator (+)</td>
+            <td><span class="code">let pet = 'dog';</span></td>
+            <td rowspan="2">My pet is a dog.</td>
+            <td rowspan="2">Concatenates string variables with other strings.</td>
+          </tr>
+          <tr>
+            <td><span class="code">console.log('My pet is a '+pet+'.');</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2">String Interpolation (`${}`)</td>
+            <td><span class="code">let pet = 'dog';</span></td>
+            <td rowspan="2">My pet is a dog.</td>
+            <td rowspan="2">Concatenates string variables with other strings.</td>
+          </tr>
+          <tr>
+            <td><span class="code">console.log(`My pet is a ${pet}`);</span></td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -434,6 +570,9 @@
           <td></td>
           <td><span class="code">&lt;&gt;</span></td>
           <td></td>
+        </tr>
+        <tr>
+          <td class='centerLink' colspan=''><a href="#" target='_blank'>Click here to know more</a></td>
         </tr>
       </tbody>
     </table> -->

@@ -41,3 +41,7 @@ td {
   font-family: monospace;
   background-color: #add8e6;
 }
+
+.centerLink {
+  text-align: center;
+}
