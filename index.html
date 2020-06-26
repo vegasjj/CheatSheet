@@ -10,18 +10,41 @@
 <body>
   <header>
     <h1>Ultimate Cheat Sheet</h1>
-    <nav>
-      <ul>
-        <li><a href="#tables">Tables</a></li>
-        <li>Forms</li>
-        <li>Semantic Tags</li>
-      </ul>
-    </nav>
   </header>
-  <main>
+
+  <aside class="left">
+    <nav>
+      <ol>
+        <li><a href="#tables">Tables</a></li>
+          <ul>
+            <li><a href="#tableTags">Table Tags</a> </li>
+            <li><a href="#tableAttributes">Table Attributes</a> </li>
+          </ul>
+        <li><a href="#docker">Docker</a></li>
+          <ul>
+            <li><a href="#dockerCommands">Docker Commands</a> </li>
+            <li><a href="#dockerFlags">Docker Flags</a> </li>
+          </ul>
+        <li><a href="#js">JavaScript</a></li>
+          <ul>
+            <li><a href="#comments">comments</a></li>
+            <li><a href="#keywords">Keywords</a> </li>
+            <li><a href="#objects">Object</a> </li>
+            <li><a href="#methods">Methods</a> </li>
+            <li><a href="#dataTypes">Data Types</a> </li>
+            <li><a href="#comparisonOperators">Comparison Operators</a></li>
+            <li><a href="#logicalOperators">Logic Operators</a> </li>
+            <li><a href="#falsyValues">Falsy Values</a> </li>
+            <li><a href="#assignmentOperators">Assignment Operators</a> </li>
+          </ul>
+      </ol>
+    </nav>
+  </aside>
+  <main class="right">
+
     <!--Table section-->
     <section id="tables">
-      <table>
+      <table id="tableTags">
         <caption>Table Tags</caption>
         <thead>
           <tr>
@@ -74,7 +97,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--Table Attributes Table-->
+      <table id="tableAttributes">
         <caption>Table Attributes</caption>
         <thead>
           <tr>
@@ -99,8 +124,12 @@
     </section>
     <br>
     <hr>
+    <br>
+
+    <!--Docker Section-->
     <section id="docker">
-      <table>
+      <!--Docker Commands Table-->
+      <table id="dockerCommands">
         <caption>Docker Commands</caption>
         <thead>
           <tr>
@@ -177,7 +206,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--Docker flags table-->
+      <table id="dockerFlags">
         <caption>Docker flags</caption>
         <thead>
           <tr>
@@ -220,8 +251,11 @@
     <br>
     <hr>
     <br>
+
+    <!--JavaScript section-->
     <section id="js">
-      <table>
+      <!--JavaScript Comments Table-->
+      <table id="comments">
         <caption>JavaScript Comments</caption>
         <thead>
           <tr>
@@ -244,7 +278,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Keywords Table-->
+      <table id="keywords">
         <caption>JavaScript Keywords</caption>
         <thead>
           <tr>
@@ -300,7 +336,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Objects Table-->
+      <table id="objects">
         <caption>JavaScript Objects</caption>
         <thead>
           <tr>
@@ -324,7 +362,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Methods Table-->
+      <table id="methods">
         <caption>JavaScript Methods</caption>
         <thead>
           <tr>
@@ -377,7 +417,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Data Types Table-->
+      <table id="dataTypes">
         <caption>JavaScript Data Types</caption>
         <thead>
           <tr>
@@ -420,7 +462,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Basic Operators Table-->
+      <table id="basicOperators">
         <caption>JavaScript Basic Operators</caption>
         <thead>
           <tr>
@@ -482,8 +526,10 @@
         </tbody>
       </table>
       <br>
-      <table>
-        <caption>Comparison Operators</caption>
+
+      <!-- JavaScript Comparison Operators Table-->
+      <table id="comparisonOperators">
+        <caption>JavaScript Comparison Operators</caption>
         <thead>
           <tr>
             <th>Operator</th>
@@ -538,8 +584,10 @@
         </tbody>
       </table>
       <br>
-      <table>
-        <caption>Logical Operators</caption>
+
+      <!--JavaScript Logical Operators Table-->
+      <table id="logicalOperators">
+        <caption>JavaScript Logical Operators</caption>
         <thead>
           <tr>
             <th>Operator</th>
@@ -551,13 +599,13 @@
         <tbody>
           <tr>
             <td>And &&</td>
-            <td><span class="code">if (4==4 && 5==5) {instruction1;}</span></td>
+            <td><span class="code">if ((4==4) && (5==5)) {instruction1;}</span></td>
             <td>true</td>
             <td>Compares if two conditions are true.</td>
           </tr>
           <tr>
             <td>Or (||)</td>
-            <td><span class="code">if (4==3 || 5==5) {instruction1;}</span></td>
+            <td><span class="code">if ((4==3) || (5==5)) {instruction1;}</span></td>
             <td>true</td>
             <td>Compares if one of two or more conditions is true.</td>
           </tr>
@@ -570,8 +618,10 @@
         </tbody>
       </table>
       <br>
-      <table>
-        <caption>List of Falsy values</caption>
+
+      <!--Falsy values table-->
+      <table id="falsyValues">
+        <caption>Falsy values</caption>
         <thead>
           <tr>
             <th>Falsy</th>
@@ -599,7 +649,9 @@
         </tbody>
       </table>
       <br>
-      <table>
+
+      <!--JavaScript Mathematical Assignment Operators Table-->
+      <table id="assignmentOperators">
         <caption>JavaScript Mathematical Assignment Operators</caption>
         <thead>
           <tr>
