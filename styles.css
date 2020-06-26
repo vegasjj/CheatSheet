@@ -68,6 +68,10 @@ ol {
   position: fixed;
 }
 
-ol a{
+ol a, main a{
   text-decoration: none;
+}
+
+.right a {
+  font-size: 18px;
 }
