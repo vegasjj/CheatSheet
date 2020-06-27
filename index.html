@@ -195,14 +195,48 @@
             <td>Starts a given container.</td>
           </tr>
           <tr>
-            <td>docker rm</td>
+            <td rowspan="2">docker rm</td>
             <td><span class="code">docker rm container_id</span></td>
             <td>Removes a given container.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker image rm image_id</span></td>
+            <td>Removes a given image.</td>
           </tr>
           <tr>
             <td>docker push</td>
             <td><span class="code">docker push image_id</span></td>
             <td>Push a given image to a registry.</td>
+          </tr>
+          <tr>
+            <td rowspan="3">docker volume</td>
+            <td><span class="code">docker volume ls</span></td>
+            <td>Shows a list of all volumes available.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker volume rm volume_id</span></td>
+            <td>Removes a given volume.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker volume create volume_id</span></td>
+            <td>Creates a named volume.</td>
+          </tr>
+          <tr>
+            <td rowspan="4">docker-compose</td>
+            <td><span class="code">docker-compose up -d</span></td>
+            <td>Runs a docker-compose file in detached mode.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker-compose start</span></td>
+            <td>Starts containers in a docker-compose file if they are already created.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker-compose stop</span></td>
+            <td>Stops containers in a docker-compose file.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker-compose down</span></td>
+            <td>Stops and romoves containers in a docker-compose file.</td>
           </tr>
         </tbody>
       </table>
@@ -241,7 +275,7 @@
             <td>Names a given container.</td>
           </tr>
           <tr>
-            <td><span class="code">-ti container_name</span></td>
+            <td><span class="code">-it container_name</span></td>
             <td>Allows the container to run with an interactive prompt.</td>
           </tr>
           <tr>
