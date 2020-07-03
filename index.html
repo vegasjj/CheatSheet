@@ -228,7 +228,7 @@
           </tr>
           <tr>
             <td rowspan="2">docker rm</td>
-            <td><span class="code">docker rm container_id</span></td>
+            <td><span class="code">docker rm -f container_id</span></td>
             <td>Removes a given container.</td>
           </tr>
           <tr>
@@ -297,6 +297,10 @@
           <tr>
             <td><span class="code">-d image_id</span></td>
             <td>Allows to run other commands while the container is built in the background.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-f container_id</span></td>
+            <td>Force a container to be removed if it hasn't been stopped first.</td>
           </tr>
           <tr>
             <td><span class="code">-p host_port:container_port</span></td>
