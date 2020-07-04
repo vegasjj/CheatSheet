@@ -236,9 +236,19 @@
             <td>Removes a given image.</td>
           </tr>
           <tr>
+            <td>docker login</td>
+            <td><span class="code">docker login -u my_user_name</span></td>
+            <td>Logs in to Docker Hub passing a given username.</td>
+          </tr>
+          <tr>
+            <td>docker tag</td>
+            <td><span class="code">docker tag image_id my_user_name/new_image_name</span></td>
+            <td>Tags a given image with a name to be pushed.</td>
+          </tr>
+          <tr>
             <td>docker push</td>
-            <td><span class="code">docker push image_id</span></td>
-            <td>Push a given image to a registry.</td>
+            <td><span class="code">docker push my_tag</span></td>
+            <td>Push a given tagged image to a registry.</td>
           </tr>
           <tr>
             <td rowspan="3">docker volume</td>
@@ -293,6 +303,10 @@
           <tr>
             <td><span class="code">-t image_name</span></td>
             <td>Names a given image.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-u my_user_name</span></td>
+            <td>Specifies a given username lo log in.</td>
           </tr>
           <tr>
             <td><span class="code">-d image_id</span></td>
