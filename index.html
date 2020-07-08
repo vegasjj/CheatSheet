@@ -200,7 +200,7 @@
           </tr>
           <tr>
             <td>docker run</td>
-            <td><span class="code">docker run -d --name container_name -p host_port:container_port image_id</span></td>
+            <td><span class="code">docker run -d --name container_name -p host_port:container_port -v named_volume:path image_id</span></td>
             <td>Search for a given image to run a container.</td>
           </tr>
           <tr>
@@ -285,7 +285,7 @@
             <td>Creates a named volume.</td>
           </tr>
           <tr>
-            <td rowspan="4">docker-compose</td>
+            <td rowspan="5">docker-compose</td>
             <td><span class="code">docker-compose up -d</span></td>
             <td>Runs a docker-compose file in detached mode.</td>
           </tr>
@@ -298,8 +298,17 @@
             <td>Stops containers in a docker-compose file.</td>
           </tr>
           <tr>
-            <td><span class="code">docker-compose down</span></td>
-            <td>Stops and romoves containers in a docker-compose file.</td>
+            <td><span class="code">docker-compose down --volumes</span></td>
+            <td>Stops and romoves containers in a docker-compose file along with the volumes.</td>
+          </tr>
+          <tr>
+            <td><span class="code">docker-compose logs -f</span></td>
+            <td>Shows the logs as they are generated.</td>
+          </tr>
+          <tr>
+            <td>docker network</td>
+            <td><span class="code">docker network create network_name</span></td>
+            <td>Creates a network.</td>
           </tr>
         </tbody>
       </table>
@@ -344,6 +353,10 @@
           <tr>
             <td><span class="code">--name container_name</span></td>
             <td>Names a given container.</td>
+          </tr>
+          <tr>
+            <td><span class="code">-v named_volume:path</span></td>
+            <td>Specifies a path to map a named volume in a container.</td>
           </tr>
           <tr>
             <td><span class="code">-it container_name</span></td>
