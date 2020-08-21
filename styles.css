@@ -69,7 +69,7 @@ td {
 
 ol {
   font-size: 100%;
-  position: fixed;
+  position: relative;
 }
 
 ol a, main a{
@@ -91,6 +91,10 @@ figure {
     display: block;
     width: 75%;
     margin: 0 auto;
+}
+
+figcaption{
+  text-align: right;
 }
 
 img {
