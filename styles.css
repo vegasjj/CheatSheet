@@ -23,7 +23,8 @@ caption {
   font-size: 170%;
 }
 
-td, th {
+td, 
+th {
   border: 10% solid #000;
 
 }
@@ -47,7 +48,7 @@ td {
   background-color: #add8e6;
 }
 
-.centerLink {
+.center-link {
   text-align: center;
 }
 
